@@ -7,7 +7,50 @@
       "Bash(git pull:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm test:*)",
+      "Bash(dir:*)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" ls-tree:*)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" show HEAD:AGENTS.md)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" show HEAD:README.md)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" show HEAD:.gitignore)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" log --oneline)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" show HEAD:.claude/settings.local.json)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" diff HEAD)",
+      "Bash(cat:*)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" show cb7b890 --stat)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" show a0e1de7 --stat)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" log --all --source --grep=\"logging\\\\|monitoring\\\\|slack\\\\|notification\" --oneline)",
+      "Bash(git -C \"/c/Users/nicol/Agent Workflow\" log --all --oneline -20)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(where:*)",
+      "Bash(py:*)",
+      "Bash(curl:*)",
+      "Bash(winget install:*)",
+      "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" execution/slack_notifier.py)",
+      "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -c:*)",
+      "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" slack_notifier.py)",
+      "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -c \"\nfrom env_loader import load_env\nload_env\\(\\)\nfrom slack_notifier import notify_success\nnotify_success\\(''Bot name updated to Claude Agent!''\\)\n\")",
+      "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m pip install modal)",
+      "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m modal setup)",
+      "Bash(set:*)",
+      "Bash(cmd.exe /c \"\"\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\"\" -m modal profile current 2>&1\")",
+      "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m modal run modal_test.py)",
+      "Bash(PYTHONUTF8=1 \"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m modal:*)"
+    ]
+  },
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -Command \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\Windows Notify System Generic.wav').PlaySync()\""
+          }
+        ]
+      }
     ]
   }
 }
