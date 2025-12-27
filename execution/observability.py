@@ -321,7 +321,7 @@ class ObservabilityHub:
         self.slack.send(
             event.message,
             level=event.level,
-            title=title_map.get(event.type, "📌 Event"),
+            title=title_map.get(event.event_type, "📌 Event"),
             fields=fields
         )
 

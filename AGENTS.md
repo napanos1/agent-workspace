@@ -36,6 +36,24 @@ Before writing a script, check `execution/` per your directive. Only create new 
 **3. Update directives as you learn**
 Directives are living documents. When you discover API constraints, better approaches, common errors, or timing expectations—update the directive. But don't create or overwrite directives without asking unless explicitly told to. Directives are your instruction set and must be preserved (and improved upon over time, not extemporaneously used and then discarded).
 
+## Script Quality & Documentation
+
+After creating or modifying scripts in `execution/`, these agents run automatically:
+
+**reviewer** — Quality check (runs after creating new scripts)
+- Thoroughly reviews security, error handling, performance, robustness
+- Checks for optimization opportunities
+- Verifies script matches its directive
+- Returns findings to orchestrator with PASS / PASS WITH WARNINGS / FAIL
+- Orchestrator fixes any issues identified, then re-runs reviewer until PASS
+
+**documenter** — Update directives (runs after modifying scripts)
+- Reads the script to understand current behavior
+- Updates the corresponding directive to match
+- Documents new parameters, edge cases, API limits
+
+The reviewer only reads and reports. The documenter only writes to `directives/`.
+
 ## Self-annealing loop
 
 Errors are learning opportunities. When something breaks:

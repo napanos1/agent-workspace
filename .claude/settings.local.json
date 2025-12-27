@@ -37,7 +37,8 @@
       "Bash(set:*)",
       "Bash(cmd.exe /c \"\"\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\"\" -m modal profile current 2>&1\")",
       "Bash(\"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m modal run modal_test.py)",
-      "Bash(PYTHONUTF8=1 \"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m modal:*)"
+      "Bash(PYTHONUTF8=1 \"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m modal:*)",
+      "Bash(PYTHONUTF8=1 \"C:\\\\Users\\\\nicol\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" -m modal secret create:*)"
     ]
   },
   "hooks": {
